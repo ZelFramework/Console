@@ -1,6 +1,6 @@
 <?php
 
-use ZelFramework\Kernel\Debug;
+use ZelFramework\Debug\Debug;
 use ZelFramework\Kernel\Environment;
 use ZelFramework\Kernel\Kernel;
 

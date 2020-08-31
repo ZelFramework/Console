@@ -1,24 +1,24 @@
 {
-  "name": "zelframework/console",
-  "version": "v0.1.0",
-  "description": "Console",
-  "license": "MIT",
-  "minimum-stability": "stable",
-  "authors": [
-    {
-      "name": "Britzell",
-      "email": "britzel99@gmail.com"
+    "name": "zelframework/console",
+    "version": "v0.1.0",
+    "description": "Console",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Britzell",
+            "email": "britzel99@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ZelFramework\\Console\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ZelFramework\\Console\\Tests\\": "tests/"
+        }
     }
-  ],
-  "require": {},
-  "autoload": {
-    "psr-4": {
-      "ZelFramework\\Console\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "ZelFramework\\Console\\Tests\\": "tests/"
-    }
-  }
 }
