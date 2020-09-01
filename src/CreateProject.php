@@ -28,11 +28,18 @@ class CreateProject
 		'templates/base.html.twig' => 'base.html.twig',
 		'config/cli-config.php' => 'cli-config.php',
 		'bootstrap.php' => 'bootstrap.php',
+		'composer.json' => 'composer.json',
+	];
+	
+	protected $delete = [
+		'README.md',
+		'composer.json',
 	];
 	
 	public static function init()
 	{
 		$cp = new CreateProject();
+		$cp->deleteFiles();
 		$cp->createDirs();
 		$cp->copyFiles();
 	}
@@ -48,6 +55,12 @@ class CreateProject
 	{
 		foreach ($this->files as $name => $content)
 			copy(__DIR__ . '/files/' . $content, __DIR__ . '/../../../../' . $name);
+	}
+	
+	public function deleteFiles()
+	{
+		foreach ($this->delete as $file)
+			unlink($file);
 	}
 	
 }
