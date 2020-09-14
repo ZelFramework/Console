@@ -28,6 +28,7 @@ class CreateProject
 		'templates/base.html.twig' => 'base.html.twig',
 		'config/cli-config.php' => 'cli-config.php',
 		'bootstrap.php' => 'bootstrap.php',
+		'config/router.yaml' => 'config/router.yaml',
 	];
 	
 	public static function init()
