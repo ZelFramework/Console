@@ -1,6 +1,6 @@
 # config/routes.yaml
 index:
     path: /
-    namespace: App/Controller/
+    namespace: App\Controller
 
 default_uri: /
